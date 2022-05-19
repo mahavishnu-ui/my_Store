@@ -6,6 +6,7 @@ package com.myStore.testcases;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.myStore.base.BaseClass;
@@ -25,10 +26,10 @@ public class AddToCartPageTest extends BaseClass {
 	private SearchResultPage searchResultPage;
 	private AddToCartPage addToCartPage;
 
-
+	@Parameters("browser")
 	@BeforeMethod(groups = {"Smoke","Sanity","Regression"})
-	public void setup() {
-		launchApp(); 
+	public void setup(String browser ) {
+		launchApp(browser); 
 	}
 	
 	@AfterMethod(groups = {"Smoke","Sanity","Regression"})

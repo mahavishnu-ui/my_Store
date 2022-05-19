@@ -15,7 +15,9 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 
+import com.beust.jcommander.Parameter;
 import com.myStore.utility.ExtentManager;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -55,9 +57,9 @@ public class BaseClass {
 	}
 }
 
-
-	public void launchApp() {
-		String browserName = prop.getProperty("browser");
+	@Parameters("browser")
+	public void launchApp(String browserName ) {
+		//String browserName = prop.getProperty("browser");
 		System.out.println("Browse_Name: "+browserName);
 		if (browserName.equalsIgnoreCase("Chrome")) {
 			WebDriverManager.chromedriver().setup();

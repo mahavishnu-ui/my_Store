@@ -3,12 +3,11 @@
  */
 package com.myStore.testcases;
 
-import java.util.HashMap;
-
 //import java.util.HashMap;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import com.myStore.base.BaseClass;
 import com.myStore.dataprovider.DataProviders;
@@ -29,9 +28,10 @@ public class AccountCreationPageTest extends BaseClass {
 	private HomePage homePage;
 	
 	
+	@Parameters("browser")
 	@BeforeMethod(groups = {"Smoke","Sanity","Regression"})
-	public void setup() {
-		launchApp(); 
+	public void setup(String browser ) {
+		launchApp(browser); 
 	}
 	
 	@AfterMethod(groups = {"Smoke","Sanity","Regression"})
