@@ -3,13 +3,7 @@
 <suite name="Suite">
 	
 	<test thread-count="5" name="Test_All">
-		<groups>
-		
-			<run>
-				<include name="Sanity"></include>
-			</run>
-			
-		</groups>
+		<parameter name="browser" value="Chrome"></parameter>
 		
 		<classes>
 			<class name="com.myStore.testcases.HomePageTest" />
