@@ -53,6 +53,7 @@ public class LoginPageTest extends BaseClass {
 	    Assert.assertEquals(actualURL, expectedURL);
 	    Log.info("Login is Sucess");
 	    Log.endTestCase("loginTest");
+	   
 	}
 
 }

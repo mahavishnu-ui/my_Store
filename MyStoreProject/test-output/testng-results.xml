@@ -1,372 +1,147 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="4" failed="0" skipped="2">
+<testng-results ignored="28" total="31" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-05-20T00:13:09 IST" name="CrossBrowser" finished-at="2022-05-20T00:15:25 IST" duration-ms="135997">
+  <suite started-at="2022-05-23T12:33:38 IST" name="Suite" finished-at="2022-05-23T12:35:24 IST" duration-ms="105674">
     <groups>
-      <group name="Smoke">
-        <method signature="IndexPageTest.verifyLogo()[pri:0, instance:com.myStore.testcases.IndexPageTest@f5acb9d]" name="verifyLogo" class="com.myStore.testcases.IndexPageTest"/>
-        <method signature="IndexPageTest.verifyTitle()[pri:0, instance:com.myStore.testcases.IndexPageTest@f5acb9d]" name="verifyTitle" class="com.myStore.testcases.IndexPageTest"/>
-        <method signature="IndexPageTest.verifyLogo()[pri:0, instance:com.myStore.testcases.IndexPageTest@82de64a]" name="verifyLogo" class="com.myStore.testcases.IndexPageTest"/>
-        <method signature="IndexPageTest.verifyTitle()[pri:0, instance:com.myStore.testcases.IndexPageTest@82de64a]" name="verifyTitle" class="com.myStore.testcases.IndexPageTest"/>
-        <method signature="IndexPageTest.verifyLogo()[pri:0, instance:com.myStore.testcases.IndexPageTest@61001b64]" name="verifyLogo" class="com.myStore.testcases.IndexPageTest"/>
-        <method signature="IndexPageTest.verifyTitle()[pri:0, instance:com.myStore.testcases.IndexPageTest@61001b64]" name="verifyTitle" class="com.myStore.testcases.IndexPageTest"/>
-      </group> <!-- Smoke -->
+      <group name="Sanity">
+        <method signature="AddToCartPageTest.addToCartTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.myStore.testcases.AddToCartPageTest@31fa1761]" name="addToCartTest" class="com.myStore.testcases.AddToCartPageTest"/>
+      </group> <!-- Sanity -->
+      <group name="Regression">
+        <method signature="AddToCartPageTest.addToCartTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.myStore.testcases.AddToCartPageTest@31fa1761]" name="addToCartTest" class="com.myStore.testcases.AddToCartPageTest"/>
+        <method signature="EndToEndTest.endToEndTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.myStore.testcases.EndToEndTest@4dbb42b7]" name="endToEndTest" class="com.myStore.testcases.EndToEndTest"/>
+        <method signature="OrderPageTest.verifyTotalPrice(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.myStore.testcases.OrderPageTest@6404f418]" name="verifyTotalPrice" class="com.myStore.testcases.OrderPageTest"/>
+      </group> <!-- Regression -->
     </groups>
-    <test started-at="2022-05-20T00:13:09 IST" name="IETest" finished-at="2022-05-20T00:13:47 IST" duration-ms="38324">
-      <class name="com.myStore.testcases.IndexPageTest">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.myStore.testcases.IndexPageTest@61001b64]" started-at="2022-05-20T00:13:08 IST" name="beforeSuite" finished-at="2022-05-20T00:13:09 IST" duration-ms="422" status="PASS">
+    <test started-at="2022-05-23T12:33:38 IST" name="Regression" finished-at="2022-05-23T12:35:24 IST" duration-ms="105674">
+      <class name="com.myStore.testcases.AddToCartPageTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.myStore.testcases.AddToCartPageTest@31fa1761]" started-at="2022-05-23T12:34:18 IST" name="setup" finished-at="2022-05-23T12:34:30 IST" duration-ms="12636" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="addToCartTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.myStore.testcases.AddToCartPageTest@31fa1761]" started-at="2022-05-23T12:34:30 IST" name="addToCartTest" data-provider="getProduct" finished-at="2022-05-23T12:34:41 IST" duration-ms="11054" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[t-shirt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[M]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCartTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.myStore.testcases.AddToCartPageTest@31fa1761]" started-at="2022-05-23T12:34:41 IST" name="tearDown" finished-at="2022-05-23T12:34:42 IST" duration-ms="302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.myStore.testcases.AddToCartPageTest -->
+      <class name="com.myStore.testcases.EndToEndTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.myStore.testcases.EndToEndTest@4dbb42b7]" started-at="2022-05-23T12:34:42 IST" name="setup" finished-at="2022-05-23T12:34:51 IST" duration-ms="9626" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="endToEndTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.myStore.testcases.EndToEndTest@4dbb42b7]" started-at="2022-05-23T12:34:51 IST" name="endToEndTest" data-provider="getProduct" finished-at="2022-05-23T12:35:23 IST" duration-ms="31053" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[t-shirt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[M]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endToEndTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.myStore.testcases.EndToEndTest@4dbb42b7]" started-at="2022-05-23T12:35:23 IST" name="tearDown" finished-at="2022-05-23T12:35:24 IST" duration-ms="1096" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.myStore.testcases.EndToEndTest -->
+      <class name="com.myStore.testcases.OrderPageTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.myStore.testcases.OrderPageTest@6404f418]" started-at="2022-05-23T12:33:39 IST" name="setup" finished-at="2022-05-23T12:33:58 IST" duration-ms="19459" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyTotalPrice(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.myStore.testcases.OrderPageTest@6404f418]" started-at="2022-05-23T12:33:58 IST" name="verifyTotalPrice" data-provider="getProduct" finished-at="2022-05-23T12:34:17 IST" duration-ms="18632" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[t-shirt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[M]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTotalPrice -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.myStore.testcases.OrderPageTest@6404f418]" started-at="2022-05-23T12:34:17 IST" name="tearDown" finished-at="2022-05-23T12:34:18 IST" duration-ms="699" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.myStore.testcases.OrderPageTest -->
+      <class name="com.myStore.testcases.HomePageTest">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.myStore.testcases.HomePageTest@3a44431a]" started-at="2022-05-23T12:33:38 IST" name="beforeSuite" finished-at="2022-05-23T12:33:38 IST" duration-ms="446" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.myStore.testcases.IndexPageTest@61001b64]" started-at="2022-05-20T00:13:09 IST" name="loadConfig" finished-at="2022-05-20T00:13:09 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.myStore.testcases.HomePageTest@3a44431a]" started-at="2022-05-23T12:33:38 IST" name="loadConfig" finished-at="2022-05-23T12:33:38 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadConfig -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.myStore.testcases.IndexPageTest@61001b64]" started-at="2022-05-20T00:13:09 IST" name="setup" finished-at="2022-05-20T00:13:47 IST" duration-ms="38233" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[IE]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Unexpected error launching Internet Explorer. IELaunchURL() returned HRESULT 80070012 ('There are no more files.') for URL 'http://localhost:19203/'
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-SJOPVFR', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
-Driver info: driver.version: InternetExplorerDriver
-remote stacktrace: ]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Unexpected error launching Internet Explorer. IELaunchURL() returned HRESULT 80070012 ('There are no more files.') for URL 'http://localhost:19203/'
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-SJOPVFR', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
-Driver info: driver.version: InternetExplorerDriver
-remote stacktrace: 
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
-at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
-at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-at org.openqa.selenium.ie.InternetExplorerDriver.run(InternetExplorerDriver.java:221)
-at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:213)
-at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:150)
-at com.myStore.base.BaseClass.launchApp(BaseClass.java:73)
-at com.myStore.testcases.IndexPageTest.setup(IndexPageTest.java:30)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:831)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyLogo()[pri:0, instance:com.myStore.testcases.IndexPageTest@61001b64]" started-at="2022-05-20T00:13:47 IST" name="verifyLogo" finished-at="2022-05-20T00:13:47 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Unexpected error launching Internet Explorer. IELaunchURL() returned HRESULT 80070012 ('There are no more files.') for URL 'http://localhost:19203/'
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-SJOPVFR', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
-Driver info: driver.version: InternetExplorerDriver
-remote stacktrace: ]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Unexpected error launching Internet Explorer. IELaunchURL() returned HRESULT 80070012 ('There are no more files.') for URL 'http://localhost:19203/'
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-SJOPVFR', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
-Driver info: driver.version: InternetExplorerDriver
-remote stacktrace: 
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
-at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
-at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-at org.openqa.selenium.ie.InternetExplorerDriver.run(InternetExplorerDriver.java:221)
-at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:213)
-at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:150)
-at com.myStore.base.BaseClass.launchApp(BaseClass.java:73)
-at com.myStore.testcases.IndexPageTest.setup(IndexPageTest.java:30)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:831)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogo -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.myStore.testcases.IndexPageTest@61001b64]" started-at="2022-05-20T00:13:47 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1652985827517" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.myStore.testcases.IndexPageTest@61001b64]" started-at="2022-05-20T00:13:47 IST" name="setup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1652985827525" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyTitle()[pri:0, instance:com.myStore.testcases.IndexPageTest@61001b64]" started-at="2022-05-20T00:13:47 IST" name="verifyTitle" finished-at="2022-05-20T00:13:47 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Unexpected error launching Internet Explorer. IELaunchURL() returned HRESULT 80070012 ('There are no more files.') for URL 'http://localhost:19203/'
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-SJOPVFR', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
-Driver info: driver.version: InternetExplorerDriver
-remote stacktrace: ]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Unexpected error launching Internet Explorer. IELaunchURL() returned HRESULT 80070012 ('There are no more files.') for URL 'http://localhost:19203/'
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-SJOPVFR', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
-Driver info: driver.version: InternetExplorerDriver
-remote stacktrace: 
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
-at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
-at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-at org.openqa.selenium.ie.InternetExplorerDriver.run(InternetExplorerDriver.java:221)
-at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:213)
-at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:150)
-at com.myStore.base.BaseClass.launchApp(BaseClass.java:73)
-at com.myStore.testcases.IndexPageTest.setup(IndexPageTest.java:30)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:831)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTitle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.myStore.testcases.IndexPageTest@61001b64]" started-at="2022-05-20T00:13:47 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1652985827541" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.myStore.testcases.IndexPageTest@61001b64]" started-at="2022-05-20T00:15:25 IST" name="afterSuite" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1652985925222" status="SKIP">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.myStore.testcases.HomePageTest@3a44431a]" started-at="2022-05-23T12:35:24 IST" name="afterSuite" finished-at="2022-05-23T12:35:24 IST" duration-ms="572" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- com.myStore.testcases.IndexPageTest -->
-    </test> <!-- IETest -->
-    <test started-at="2022-05-20T00:13:09 IST" name="ChromeTest" finished-at="2022-05-20T00:13:59 IST" duration-ms="50077">
-      <class name="com.myStore.testcases.IndexPageTest">
-        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.myStore.testcases.IndexPageTest@f5acb9d]" started-at="2022-05-20T00:13:09 IST" name="loadConfig" finished-at="2022-05-20T00:13:09 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loadConfig -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.myStore.testcases.IndexPageTest@f5acb9d]" started-at="2022-05-20T00:13:09 IST" name="setup" finished-at="2022-05-20T00:13:28 IST" duration-ms="19633" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyLogo()[pri:0, instance:com.myStore.testcases.IndexPageTest@f5acb9d]" started-at="2022-05-20T00:13:28 IST" name="verifyLogo" finished-at="2022-05-20T00:13:30 IST" duration-ms="1791" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogo -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.myStore.testcases.IndexPageTest@f5acb9d]" started-at="2022-05-20T00:13:30 IST" name="tearDown" finished-at="2022-05-20T00:13:31 IST" duration-ms="742" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.myStore.testcases.IndexPageTest@f5acb9d]" started-at="2022-05-20T00:13:31 IST" name="setup" finished-at="2022-05-20T00:13:58 IST" duration-ms="27119" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyTitle()[pri:0, instance:com.myStore.testcases.IndexPageTest@f5acb9d]" started-at="2022-05-20T00:13:58 IST" name="verifyTitle" finished-at="2022-05-20T00:13:58 IST" duration-ms="24" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTitle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.myStore.testcases.IndexPageTest@f5acb9d]" started-at="2022-05-20T00:13:58 IST" name="tearDown" finished-at="2022-05-20T00:13:59 IST" duration-ms="726" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.myStore.testcases.IndexPageTest -->
-    </test> <!-- ChromeTest -->
-    <test started-at="2022-05-20T00:13:09 IST" name="FirefoxTest" finished-at="2022-05-20T00:15:25 IST" duration-ms="135997">
-      <class name="com.myStore.testcases.IndexPageTest">
-        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.myStore.testcases.IndexPageTest@82de64a]" started-at="2022-05-20T00:13:09 IST" name="loadConfig" finished-at="2022-05-20T00:13:09 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loadConfig -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.myStore.testcases.IndexPageTest@82de64a]" started-at="2022-05-20T00:13:09 IST" name="setup" finished-at="2022-05-20T00:14:37 IST" duration-ms="88132" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyLogo()[pri:0, instance:com.myStore.testcases.IndexPageTest@82de64a]" started-at="2022-05-20T00:14:37 IST" name="verifyLogo" finished-at="2022-05-20T00:14:41 IST" duration-ms="4301" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogo -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.myStore.testcases.IndexPageTest@82de64a]" started-at="2022-05-20T00:14:41 IST" name="tearDown" finished-at="2022-05-20T00:14:59 IST" duration-ms="18070" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.myStore.testcases.IndexPageTest@82de64a]" started-at="2022-05-20T00:14:59 IST" name="setup" finished-at="2022-05-20T00:15:21 IST" duration-ms="21350" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyTitle()[pri:0, instance:com.myStore.testcases.IndexPageTest@82de64a]" started-at="2022-05-20T00:15:21 IST" name="verifyTitle" finished-at="2022-05-20T00:15:21 IST" duration-ms="100" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTitle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.myStore.testcases.IndexPageTest@82de64a]" started-at="2022-05-20T00:15:21 IST" name="tearDown" finished-at="2022-05-20T00:15:25 IST" duration-ms="4006" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.myStore.testcases.IndexPageTest -->
-    </test> <!-- FirefoxTest -->
-  </suite> <!-- CrossBrowser -->
+      </class> <!-- com.myStore.testcases.HomePageTest -->
+    </test> <!-- Regression -->
+  </suite> <!-- Suite -->
 </testng-results>
